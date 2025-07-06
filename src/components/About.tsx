@@ -47,10 +47,10 @@ const About: React.FC = () => {
               <div className="w-full h-88 bg-gradient-to-br from-gradient-primary to-gradient-secondary rounded-2xl relative overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
                 <img
                   src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Alex Rivera"
-                  className="w-full h-full object-cover mix-blend-overlay"
+                  alt="Chamindu Kavishka"
+                  className="w-full h-full object-cover" // Correction is here
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                {/* The overlay div has been removed from here */}
               </div>
             </div>
 
