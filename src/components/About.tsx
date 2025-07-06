@@ -46,7 +46,7 @@ const About: React.FC = () => {
             <div className="relative scroll-reveal-left">
               <div className="w-full h-88 bg-gradient-to-br from-gradient-primary to-gradient-secondary rounded-2xl relative overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
                 <img
-                  src="https://imgur.com/a/3WFLfzR"
+                  src="/proflie.jpg"
                   alt="Chamindu Kavishka"
                   className="w-full h-full object-cover" // Correction is here
                 />
