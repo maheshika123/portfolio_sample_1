@@ -52,8 +52,8 @@ const About: React.FC = () => {
                 {/* Layer 2: The stationary image on top */}
                 <div className="absolute inset-1.5 bg-black rounded-full overflow-hidden">
                   <img
-                    src="https://imgur.com/a/ajqPQQJ.jpg"
-                    alt="Alex Rivera"
+                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Chamindu Kavishka"
                     className="w-full h-full object-cover"
                   />
                 </div>
