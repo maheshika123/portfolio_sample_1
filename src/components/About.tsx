@@ -4,14 +4,26 @@ import { Code, Palette, Zap } from 'lucide-react';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-black relative overflow-hidden">
-      {/* Enhanced Floating Particles */}
+      {/* ... (particle divs remain the same) ... */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Large gradient orbs */}
         <div className="absolute w-48 h-48 bg-gradient-to-r from-gradient-primary/15 to-gradient-secondary/15 rounded-full blur-3xl animate-float-slow" style={{ top: '5%', right: '10%', animationDelay: '0s' }}></div>
         <div className="absolute w-36 h-36 bg-gradient-to-r from-gradient-secondary/10 to-gradient-primary/10 rounded-full blur-2xl animate-float-reverse" style={{ top: '60%', left: '5%', animationDelay: '2s' }}></div>
         
-        {/* ... (other particle divs remain the same) ... */}
-
+        {/* Medium particles */}
+        <div className="absolute w-6 h-6 bg-gradient-primary rounded-full animate-float-medium shadow-lg shadow-gradient-primary/50" style={{ top: '15%', right: '20%', animationDelay: '0s' }}></div>
+        <div className="absolute w-4 h-4 bg-gradient-secondary/80 rounded-full animate-float-slow shadow-lg shadow-gradient-secondary/40" style={{ top: '70%', right: '15%', animationDelay: '1s' }}></div>
+        <div className="absolute w-5 h-5 bg-gradient-primary/60 rounded-full animate-float-fast shadow-lg shadow-gradient-primary/30" style={{ top: '40%', right: '8%', animationDelay: '1.5s' }}></div>
+        <div className="absolute w-3 h-3 bg-gradient-secondary rounded-full animate-float-medium shadow-lg shadow-gradient-secondary/50" style={{ top: '25%', left: '8%', animationDelay: '0.7s' }}></div>
+        <div className="absolute w-4 h-4 bg-gradient-primary/70 rounded-full animate-float-reverse shadow-lg shadow-gradient-primary/40" style={{ top: '80%', left: '12%', animationDelay: '2.2s' }}></div>
+        
+        {/* Small sparkles */}
+        <div className="absolute w-2 h-2 bg-white rounded-full animate-twinkle" style={{ top: '20%', right: '25%', animationDelay: '0s' }}></div>
+        <div className="absolute w-1.5 h-1.5 bg-gradient-primary rounded-full animate-twinkle" style={{ top: '50%', right: '30%', animationDelay: '1s' }}></div>
+        <div className="absolute w-2 h-2 bg-gradient-secondary rounded-full animate-twinkle" style={{ top: '75%', right: '5%', animationDelay: '1.5s' }}></div>
+        <div className="absolute w-1 h-1 bg-white rounded-full animate-twinkle" style={{ top: '35%', left: '15%', animationDelay: '0.5s' }}></div>
+        <div className="absolute w-1.5 h-1.5 bg-gradient-primary rounded-full animate-twinkle" style={{ top: '65%', left: '20%', animationDelay: '2s' }}></div>
+        
         {/* Geometric shapes */}
         <div className="absolute w-12 h-12 border-2 border-gradient-primary/30 rotate-45 animate-spin-slow" style={{ top: '10%', left: '15%' }}></div>
         <div className="absolute w-8 h-8 border border-gradient-secondary/40 rounded-full animate-pulse" style={{ top: '85%', right: '25%' }}></div>
@@ -30,16 +42,19 @@ const About: React.FC = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            
             {/* Image/Avatar - UPDATED SECTION */}
             <div className="flex justify-center items-center scroll-reveal-left">
-              {/* The rotating gradient border container */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 p-1 rounded-full bg-gradient-to-r from-gradient-primary to-gradient-secondary animate-spin-slow">
-                {/* The inner container that holds the image, creating the border effect */}
-                <div className="w-full h-full bg-black rounded-full p-1">
+              {/* A relative container to hold both the border and the image */}
+              <div className="relative w-72 h-72 md:w-80 md:h-80">
+                {/* Layer 1: The spinning gradient border (background) */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gradient-primary to-gradient-secondary animate-spin-slow"></div>
+                {/* Layer 2: The stationary image on top */}
+                <div className="absolute inset-1.5 bg-black rounded-full overflow-hidden">
                   <img
                     src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Alex Rivera"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -47,6 +62,7 @@ const About: React.FC = () => {
 
             {/* Content */}
             <div className="scroll-reveal-right">
+              {/* ... (content remains the same) ... */}
               <h3 className="text-2xl font-bold text-gradient-primary-reverse mb-6">
                 Turning Ideas Into Digital Reality
               </h3>
